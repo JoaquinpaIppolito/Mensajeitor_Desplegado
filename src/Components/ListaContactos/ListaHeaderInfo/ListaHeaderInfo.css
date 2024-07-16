@@ -1,0 +1,73 @@
+
+
+.headercontenido1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding-left: 10px;
+}
+
+
+.left1{
+    display: flex;
+    width: 180px;
+justify-content: space-between;
+}
+
+.fotoperfil1{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.nombreyestado1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+
+.right1{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+   
+}
+
+
+.comunidad{
+    color:#54656F;
+padding-top: 2px;
+font-size: 20px;
+}
+
+.estados{
+    color:#45545c;
+    padding-top: 2px;
+    font-size: 20px;
+    
+}
+
+.canales{
+    color:#54656F;
+padding-top: 2px;
+font-size: 20px;
+}
+
+.nuevochat{
+color:#54656F;
+padding-top: 2px;
+font-size: 20px;
+}
+
+.menu{
+padding-right: 20px;
+color:#54656F;
+padding-top: 3px;
+font-size: 18px;
+}

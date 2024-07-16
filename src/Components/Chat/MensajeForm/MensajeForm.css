@@ -1,0 +1,38 @@
+.formnuevomensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.emoji{
+font-size: 25px;
+margin-left: 25px;
+color:#54656F;
+}
+
+
+.signomas{
+    font-size: 40px;
+    color:#54656F;
+}
+
+.nuevomensaje{
+    height: 35px;
+    width:600px;
+    padding:10px;
+    color:white;
+    border-radius: 8px;
+    border-color: transparent;
+  color:#54656F;
+    outline: none;
+}
+
+
+
+.botonenviar{
+    color: #54656F;
+    border-style: hidden;
+    font-size: 18px;
+}
