@@ -13,9 +13,9 @@ export const Contactos = ({cttos}) => {
   return(
     
     <div className='cajacontacto'>
-      <Link to={'/chat/'+ id}>
+      <Link to={`/chat/${id}`}>
 <div className='cuerpocontacto'>
-<img className='fotoperfilcontactos' src={thumbnail} alt="foto de perfil de:" />
+<img className='fotoperfilcontactos' src={thumbnail} alt={`foto de perfil de ${nombre}`} />
   <div className='nombreyultimomensaje'>
 <h2 className='nombrecontacto'>
     {nombre}

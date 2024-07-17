@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { ChatHeaderInfo, ListaMensajes, MensajeForm } from '../Components/Chat'
 import './ChatScreen.css'
 import { ListaHeaderInfo } from '../Components/ListaContactos/ListaHeaderInfo/ListaHeaderInfo'
 import { ContactosLista } from '../Components/ListaContactos/ContactosLista/ContactosLista'
-import { Route, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { DATA_MOOK } from '../Components/DATA_MOOK'
  
 
@@ -13,26 +13,41 @@ import { DATA_MOOK } from '../Components/DATA_MOOK'
 export const ChatScreen = () => {
     
 
-    
+
     const {id} = useParams()
-    console.log(id)
-
-    const contacto = DATA_MOOK.find(contacto => contacto.id === Number(id))
-
-    console.log(contacto)
-
-
-    const [nuevoMensajeInfo, setNuevoMensajeInfo] = useState(contacto.mensajes)
     
-    const handleSubmitNuevoMensaje = (nuevomsje) => {
-        setNuevoMensajeInfo([...nuevoMensajeInfo,{
-            author: 'yo',
-            text: nuevomsje,
-            estado: 'recibido',
-            day: 'hoy',
-            hour: '13:45',
-        }])
+    const [contactoActivo, setcontactoActivo] = useState();
+
+    useEffect(() => {
+        const contacto = DATA_MOOK.find(contacto => contacto.id === Number(id));
+        setcontactoActivo(contacto);
+      }, [id]);
+    
+
+
+
+      const handleSubmitNuevoMensaje = (nuevomsje) => {
+        setcontactoActivo(contactoPrevio => ({
+          ...contactoPrevio,mensajes: [
+            ...contactoPrevio.mensajes,
+            {
+              author: 'yo',
+              text: nuevomsje,
+              estado: 'recibido',
+              day: 'hoy',
+              hour: '13:45',
+            }
+          ]
         }
+        )
+        );
+      };
+
+      if (!contactoActivo) {
+        console.log('Error')
+      }
+      else{
+
 
   return (
   
@@ -48,10 +63,10 @@ export const ChatScreen = () => {
 
     <div className='chatcontenedor'>
         <div className='header'>
-            <ChatHeaderInfo contactodata={contacto}/>
+            <ChatHeaderInfo contactodata={contactoActivo}/>
         </div>
         <div className='chat'>
-            <ListaMensajes lista_mensaje={nuevoMensajeInfo} lista_mensaje1={contacto.mensajes}/>
+            <ListaMensajes lista_mensaje={contactoActivo.mensajes}/>
         </div>
         <div className='footer'>
         <MensajeForm handleSubmitNuevoMensaje={handleSubmitNuevoMensaje}/>
@@ -59,6 +74,7 @@ export const ChatScreen = () => {
     </div>
     </>
   )
+}
 }
 
 
