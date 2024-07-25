@@ -3,6 +3,9 @@ export const DATA_MOOK =[
         nombre: 'Messi',
         thumbnail: '/images/messi.png',
         id: 0,
+        telefono: '+54 9 11 20222022',
+        frase: 'La pelota siempre al 10',
+        archivos: '1',
         mensajes:[
                     {
                         author: 'Messi (10)',
@@ -73,6 +76,9 @@ export const DATA_MOOK =[
                 nombre: 'Di Maria',
                 id: 1,
                 thumbnail: '/images/dimaria.png',
+                telefono: '+54 9 11 20222023',
+                frase: 'Soy el fideo de la gente',
+                archivos: '112',
                 mensajes:[
                     {
                         author: 'Di Maria',
@@ -94,6 +100,9 @@ export const DATA_MOOK =[
                 nombre: 'El dibu',
                 id: 2,
                 thumbnail: '/images/dibu.png',
+                telefono: '+54 9 11 20222024',
+                frase: 'Mira que te como hermano',
+                archivos: '0',
                 mensajes:[
                     {
                         author: 'Dibu',
@@ -108,6 +117,9 @@ export const DATA_MOOK =[
                 nombre: 'Otamendi',
                 id: 3,
                 thumbnail: '/images/otamendi.png',
+                telefono: '+54 9 11 20222025',
+                frase: 'Defendiendo a la seleccion',
+                archivos: '6',
                 mensajes:[
                     {
                         author: 'Otamendi',
@@ -122,6 +134,9 @@ export const DATA_MOOK =[
                 nombre: 'Montiel',
                 id: 4,
                 thumbnail: '/images/montiel.png',
+                telefono: '+54 9 11 20222026',
+                frase: 'No se lo que es pifiar un penal, jaja',
+                archivos: '3',
                 mensajes:[
                     {
                         author: 'Montiel',
@@ -136,6 +151,9 @@ export const DATA_MOOK =[
                 nombre: 'Pezzella',
                 id: 5,
                 thumbnail: '/images/pezzella.png',
+                telefono: '+54 9 11 20222027',
+                frase: 'Luchandola para cuando me toque entrar',
+                archivos: '4',
                 mensajes:[
                     {
                         author: 'Pezella',
@@ -149,6 +167,9 @@ export const DATA_MOOK =[
                 nombre: 'Lisandro Martinez',
                 id: 6,
                 thumbnail: '/images/martinez.png',
+                telefono: '+54 9 11 20222028',
+                frase: 'Afianzandome con la celeste y blanca',
+                archivos: '1',
                 mensajes:[
                     {
                         author: 'Lisandro Martinez',
@@ -163,6 +184,9 @@ export const DATA_MOOK =[
                 nombre: 'Enzo Fernandez',
                 id: 7,
                 thumbnail: '/images/enzo.png',
+                telefono: '+54 9 11 20222029',
+                frase: 'Tocar y tocar siempre para adelante',
+                archivos: '0',
                 mensajes:[
                     {
                         author: 'Enzo Fernandez',
@@ -177,6 +201,9 @@ export const DATA_MOOK =[
                 nombre: 'De Paul',
                 id: 8,
                 thumbnail: '/images/depaul.png',
+                telefono: '+54 9 11 20222030',
+                frase: 'Te metes con Messi y te metes conmigo',
+                archivos: '10',
                 mensajes:[
                     {
                         author: 'De Paul',
@@ -191,6 +218,9 @@ export const DATA_MOOK =[
                 nombre: 'Julian Alvarez',
                 id: 9,
                 thumbnail: '/images/julian.png',
+                telefono: '+54 9 11 20222031',
+                frase: 'La arana que pica',
+                archivos: '223',
                 mensajes:[
                     {
                         author: 'Julian',
@@ -205,6 +235,9 @@ export const DATA_MOOK =[
                 nombre: 'Exequiel Palacios',
                 id: 10,
                 thumbnail: '/images/palacios.png',
+                telefono: '+54 9 11 20222032',
+                frase: 'De River para el mundo',
+                archivos: '0',
                 mensajes:[
                     {
                         author: 'Exequiel Palacio',

@@ -7,6 +7,8 @@
  height: 1000px;
  background-color: #f0f2f5;
  gap: 5px;
+ color:black;
+ background-image: url(/images/fondoinfoscreen.jpg);
 }
 
 .headerinfo{
@@ -62,15 +64,16 @@
     justify-content: space-between;
     width: 800px;
     height: 100px;
-    padding: 20px;
+    padding: 25px;
     background-color: white;
-   
+    color:#a1a3a4
     
 }
 
 .infofrase{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    color:black
 }
 
 .archivos{
@@ -81,6 +84,7 @@
     height: 80px;
     padding: 30px;
     background-color: white;
+    color:#a1a3a4
 }
 
 .otros{
@@ -92,33 +96,52 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     gap: 20px;
-    padding: 20px;
+    padding: 25px;
 }
 
 .destacados{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 95px;
-    
     padding: 10px;
+    gap: 25px;
+}
+
+.destacadosleft{
+    display:flex;
     gap: 20px;
 }
 
 .silenciar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 95px;
-    
     padding: 10px;
+    gap: 25px;
+}
+
+.silenciarleft{
+    display:flex;
     gap: 20px;
+}
+
+.toggle{
+    font-size: 20px;
+    color:#585858;
 }
 
 .temporales{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 95px;
-    
     padding: 10px;
+}
+
+.temporalesleft{
+    display:flex;
     gap: 20px;
 }
 
@@ -126,7 +149,6 @@
     display: flex;
     align-items: center;
     height: 95px;
-   
     padding: 10px;
     gap: 20px;
 }
