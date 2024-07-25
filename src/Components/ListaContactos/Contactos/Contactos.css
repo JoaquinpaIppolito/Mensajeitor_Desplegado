@@ -6,13 +6,14 @@
 
 .cajacontacto{
     display:flex;
-    width: 540px;
-    height: 60px;
+    width: 790px;
+    height: 90px;
     align-items: center;
     font-size: 10px;
     background-color: white;
     border-top: 1px solid #F2F4F5;
     border-bottom: 1px solid #F2F4F5;
+    padding-left: 5px;
     }
 
     .cajacontacto:hover {
@@ -24,13 +25,16 @@
 .fotoperfilcontactos{
 
     padding-left: 5px;
-    width: 40px;
-    height: 35px;
+    width: 45px;
+    height: 40px;
     
 }
 
 .cuerpocontacto{
     display: flex;
+    max-width: 780px;
+    min-width: 780px ;
+    justify-content: flex-start;
     align-items: center;
     padding:5px;
   
@@ -42,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     gap:2px;
-    padding-left: 5px;
+    padding-left: 10px;
     
 }
 
@@ -58,11 +62,12 @@
 
 
 .fechacontacto{
-    display:flex;
-    align-items: center;
-    padding-left: 230px;
+
+  
+    padding-left: 480px;
     color: #667781;
     font-size: 11px;
+    
 }
 
 

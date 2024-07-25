@@ -2,7 +2,6 @@ export const DATA_MOOK =[
     {
         nombre: 'Messi',
         thumbnail: '/images/messi.png',
-        ultima_conexion: '13:15',
         id: 0,
         mensajes:[
                     {
@@ -74,7 +73,6 @@ export const DATA_MOOK =[
                 nombre: 'Di Maria',
                 id: 1,
                 thumbnail: '/images/dimaria.png',
-                ultima_conexion: 'Ayer',
                 mensajes:[
                     {
                         author: 'Di Maria',
@@ -96,7 +94,6 @@ export const DATA_MOOK =[
                 nombre: 'El dibu',
                 id: 2,
                 thumbnail: '/images/dibu.png',
-                ultima_conexion: '13:25',
                 mensajes:[
                     {
                         author: 'Dibu',
@@ -111,7 +108,6 @@ export const DATA_MOOK =[
                 nombre: 'Otamendi',
                 id: 3,
                 thumbnail: '/images/otamendi.png',
-                ultima_conexion: '15:55',
                 mensajes:[
                     {
                         author: 'Otamendi',
@@ -126,7 +122,6 @@ export const DATA_MOOK =[
                 nombre: 'Montiel',
                 id: 4,
                 thumbnail: '/images/montiel.png',
-                ultima_conexion: 'Ayer',
                 mensajes:[
                     {
                         author: 'Montiel',
@@ -141,7 +136,6 @@ export const DATA_MOOK =[
                 nombre: 'Pezzella',
                 id: 5,
                 thumbnail: '/images/pezzella.png',
-                ultima_conexion: '14:45',
                 mensajes:[
                     {
                         author: 'Pezella',
@@ -155,7 +149,6 @@ export const DATA_MOOK =[
                 nombre: 'Lisandro Martinez',
                 id: 6,
                 thumbnail: '/images/martinez.png',
-                ultima_conexion: '13:35',
                 mensajes:[
                     {
                         author: 'Lisandro Martinez',
@@ -170,7 +163,6 @@ export const DATA_MOOK =[
                 nombre: 'Enzo Fernandez',
                 id: 7,
                 thumbnail: '/images/enzo.png',
-                ultima_conexion: '14:02',
                 mensajes:[
                     {
                         author: 'Enzo Fernandez',
@@ -185,7 +177,6 @@ export const DATA_MOOK =[
                 nombre: 'De Paul',
                 id: 8,
                 thumbnail: '/images/depaul.png',
-                ultima_conexion: '13:46',
                 mensajes:[
                     {
                         author: 'De Paul',
@@ -200,7 +191,6 @@ export const DATA_MOOK =[
                 nombre: 'Julian Alvarez',
                 id: 9,
                 thumbnail: '/images/julian.png',
-                ultima_conexion: 'Ayer',
                 mensajes:[
                     {
                         author: 'Julian',
@@ -215,7 +205,6 @@ export const DATA_MOOK =[
                 nombre: 'Exequiel Palacios',
                 id: 10,
                 thumbnail: '/images/palacios.png',
-                ultima_conexion: '13:54',
                 mensajes:[
                     {
                         author: 'Exequiel Palacio',

@@ -4,22 +4,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 600px;
+    width: 800px;
     padding-left: 10px;
 }
 
 
 .left1{
     display: flex;
-    width: 180px;
-justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    min-width: 300px;
+    gap: 5px;
 }
 
 .fotoperfil1{
-    display: flex;
+ 
     width: 50px;
     height: 50px;
-    align-items: center;
 }
 
 .nombreyestado1{

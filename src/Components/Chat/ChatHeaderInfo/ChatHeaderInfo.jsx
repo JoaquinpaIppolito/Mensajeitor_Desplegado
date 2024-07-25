@@ -1,7 +1,7 @@
 import React from 'react'
 import './ChatHeaderInfo.css'
-import { useParams } from 'react-router-dom'
-import { DATA_MOOK } from '../../DATA_MOOK'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -13,13 +13,15 @@ const {nombre, id, mensajes,thumbnail,ultima_conexion} = contactodata
   
   return (
     <div className='headercontenido'>
+      <Link to={`/info/${id}`}>
       <div className='left'>
-        <img className='fotoperfil' src={thumbnail} alt="foto de perfil" />
+      <img className='fotoperfil' src={thumbnail} alt="foto de perfil" />
           <div className='nombreyestado'>
             <h2 className='nombre'>{nombre}</h2>
             <span className='contactoestado' name='contactoestado'>En Linea</span>
           </div>
       </div>
+      </Link>
       <div className='right'>
         <div className='camaramarco'>
           <span className='camara'><i class="bi bi-camera-video-fill"></i></span>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Mensaje } from '../Mensaje/Mensaje'
-import './ListaMensajes.css'
-import { useParams } from 'react-router-dom'
+
 
 
 

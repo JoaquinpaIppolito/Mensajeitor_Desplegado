@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './MensajeForm.css'
-import { ChatScreen } from '../../../Screens'
-import { Mensaje } from '../Mensaje/Mensaje'
-import { ChatHeaderInfo } from '../ChatHeaderInfo/ChatHeaderInfo'
 
 export const MensajeForm = ({handleSubmitNuevoMensaje}) => {
 

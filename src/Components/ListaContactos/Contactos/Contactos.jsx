@@ -1,12 +1,19 @@
 import React from 'react'
 import './Contactos.css'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
 /* Globo de cada contacto */
 export const Contactos = ({cttos}) => {
-  const {nombre,thumbnail,ultima_conexion,id,mensajes} = cttos
+  const {nombre,thumbnail,id,mensajes} = cttos
+
+  let ultimoMensaje = 'No hay mensajes aun'
+  let ultimaFecha = ''
+  if (mensajes && mensajes.length >0){
+  ultimoMensaje = mensajes[mensajes.length-1].text 
+  ultimaFecha = mensajes[mensajes.length-1].hour
+}
 
 
 
@@ -20,10 +27,10 @@ export const Contactos = ({cttos}) => {
 <h2 className='nombrecontacto'>
     {nombre}
   </h2>
-  <p className='ultimomensaje'>Ultimo Mensaje Aca!</p>
+  <p className='ultimomensaje'>{ultimoMensaje}</p>
   </div>
   <span className='fechacontacto'>
-    {ultima_conexion}
+    {ultimaFecha}
 </span>
 </div>
 </Link>

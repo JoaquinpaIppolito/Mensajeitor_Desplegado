@@ -1,4 +1,7 @@
-import { ChatScreen } from "./ChatScreen";
+import { ChatScreen } from "./ChatScreen/ChatScreen";
 
 
 export {ChatScreen}
+
+
+

@@ -20,7 +20,7 @@ color:#54656F;
 
 .nuevomensaje{
     height: 35px;
-    width:600px;
+    width:1000px;
     padding:10px;
     color:white;
     border-radius: 8px;
@@ -35,4 +35,5 @@ color:#54656F;
     color: #54656F;
     border-style: hidden;
     font-size: 18px;
+    cursor: pointer;
 }
