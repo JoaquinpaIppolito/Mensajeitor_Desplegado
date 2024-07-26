@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './InfoScreen.css'
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -6,6 +6,9 @@ const InfoScreen = () => {
 
 const navigate = useNavigate();
 
+const toggleOff = "bi bi-toggle2-off"
+const toggleOn = "bi bi-toggle2-on"
+const [toggle, settoggle] = useState(toggleOff);
 
 const obtenerContactos = () => {
     const contactos = localStorage.getItem('MOOK');
@@ -40,17 +43,19 @@ const obtenerContactos = () => {
         <div className='otros'>
             <div className='destacados'>
                 <div className='destacadosleft'>
-                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i className="bi bi-star-fill"></i></span>
                     <span>Mensajes destacados</span>
                 </div>
-            <span><i class="bi bi-chevron-right"></i></span>
+            <span><i className="bi bi-chevron-right"></i></span>
             </div>
             <div className='silenciar'>
                 <div className='silenciarleft'>
                     <span><i class="bi bi-bell-fill"></i></span>
                     <span>Silenciar notificaciones</span>
                 </div>
-                <span className='toggle'><i class="bi bi-toggle2-off"></i></span>
+                <span className='toggle' onClick={() => settoggle(toggle === toggleOff ? toggleOn : toggleOff)}>
+            <i class={toggle}></i>
+          </span>
             </div>
             <div className='temporales'>
                 <div className='temporalesleft'>

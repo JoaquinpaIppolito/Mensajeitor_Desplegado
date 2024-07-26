@@ -12,13 +12,6 @@ export const MensajeForm = ({handleSubmitNuevoMensaje}) => {
   }
 }
 
-/*   const [escribiendo, setEscribiendo] = useState('')
-
-  const handleEscribiendo = (e) =>{
-    setEscribiendo(e.target.value)
-    e.target.reset()
-  } */
-
   
 
   return (

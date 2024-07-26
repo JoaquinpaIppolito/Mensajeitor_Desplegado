@@ -103,6 +103,13 @@
     text-align: center;
 }
 
+.error{
+    width: 400px;
+    height: 30px;
+    color: red;
+    text-align: center;
+}
+
 .iniciar{
     width: 400px;
     height: 50px;

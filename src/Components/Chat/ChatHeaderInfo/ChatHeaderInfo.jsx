@@ -15,7 +15,7 @@ const {nombre, id, mensajes,thumbnail,ultima_conexion} = contactodata
     <div className='headercontenido'>
       <Link to={`/info/${id}`}>
       <div className='left'>
-      <img className='fotoperfil' src={thumbnail} alt="foto de perfil" />
+      <img className='fotoperfilchatheader' src={thumbnail} alt="foto de perfil" />
           <div className='nombreyestado'>
             <h2 className='nombre'>{nombre}</h2>
             <span className='contactoestado' name='contactoestado'>En Linea</span>

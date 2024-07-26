@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HomeScreen.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const HomeScreen = () => {
 
 const navigate = useNavigate();
+const [error, seterror] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -13,7 +14,11 @@ const navigate = useNavigate();
         if (usuario !== ''){
         localStorage.setItem('usuario',usuario)
         navigate('/chat/0');
+        error = ''
         e.target.reset()
+      }
+      else{
+        seterror('Introduzca un nombre de usuario!')
       }
     }
 
@@ -37,7 +42,7 @@ const navigate = useNavigate();
             <span className='descripcion1'>Escribe tu nombre de usuario:</span>
             <br></br>
             <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Escribe tu nombre de usuario' maxlength="30" />
-            <br></br>
+            <span className='error'>{error}</span>
             <button className='iniciar' type='submit'>Iniciar</button>
             <br></br>
             </form>

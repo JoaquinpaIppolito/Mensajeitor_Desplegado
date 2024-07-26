@@ -164,7 +164,7 @@ export const DATA_MOOK =[
                     }
                         ]
              },{
-                nombre: 'Lisandro Martinez',
+                nombre: 'Lautaro Martinez',
                 id: 6,
                 thumbnail: '/images/martinez.png',
                 telefono: '+54 9 11 20222028',
@@ -173,7 +173,7 @@ export const DATA_MOOK =[
                 mensajes:[
                     {
                         author: 'Lisandro Martinez',
-                        text: 'Hola soy Licha, como va?',
+                        text: 'Hola soy lautaro, como va?',
                         estado: 'visto',
                         day: 'hoy',
                         hour: '13:33',
@@ -246,6 +246,247 @@ export const DATA_MOOK =[
                         day: 'hoy',
                         hour: '13:59',
                     }
+                        ]
+             },
+             {
+                nombre: 'Marcos Acuña',
+                id: 11,
+                thumbnail: '/images/acuna.png',
+                telefono: '+54 9 11 20222033',
+                frase: 'El huevo de la gente',
+                archivos: '8',
+                mensajes:[
+                    {
+                        author: 'Marcos Acuña',
+                        text: 'Hola soy huevo',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '13:58',
+                    },
+                    {
+                        author: 'Marcos Acuña',
+                        text: 'todo bien???',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '13:59',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Huevoo querido, bien y vos?',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '14:00',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'que se cuenta',
+                        estado: 'enviado',
+                        day: 'hoy',
+                        hour: '14:02',
+                    },
+                    
+                        ]
+             },
+             {
+                nombre: 'Franco Armani',
+                id: 12,
+                thumbnail: '/images/armani.png',
+                telefono: '+54 9 11 20222034',
+                frase: 'El pulpo bajo los 3 palos',
+                archivos: '1',
+                mensajes:[
+                    {
+                        author: 'Franco Armani',
+                        text: 'Hola soy franco',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '15:36',
+                    },
+                    {
+                        author: 'Franco Armani',
+                        text: 'todo bien???',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '15:38',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Franquito crack',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '15:40',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'todo bien?',
+                        estado: 'enviado',
+                        day: 'hoy',
+                        hour: '15:45',
+                    },
+                    
+                        ]
+             },
+             {
+                nombre: 'Cuti Romero',
+                id: 13,
+                thumbnail: '/images/cuti.png',
+                telefono: '+54 9 11 20222036',
+                frase: 'Siempre dispuesto a ROMPER por la seleccion',
+                archivos: '1',
+                mensajes:[
+                    {
+                        author: 'Cuti Romero',
+                        text: 'Hola soy el cuti',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '13:03',
+                    },
+                    {
+                        author: 'Cuti Romero',
+                        text: 'todo bien???',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '13:04',
+                    },
+                    {
+                        author: 'Cuti Romero',
+                        text: 'Viste como rompi al chileno?',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '13:06',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Cutii... si, patadon!!',
+                        estado: 'enviado',
+                        day: 'hoy',
+                        hour: '13:11',
+                    },
+                    
+                        ]
+             },
+             {
+                nombre: 'Paulo Dybala',
+                id: 14,
+                thumbnail: '/images/dybala.png',
+                telefono: '+54 9 11 20222037',
+                frase: 'Disponible para cuando me llamen!',
+                archivos: '1',
+                mensajes:[
+                    {
+                        author: 'Paulo Dybala',
+                        text: 'Hola soy Paulito',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '19:45',
+                    },
+                    {
+                        author: 'Paulo Dybala',
+                        text: 'todo bien???',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '19:46',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Paulito, bien y vos?',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '19:47',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Que mal que no te convocaron!',
+                        estado: 'enviado',
+                        day: 'hoy',
+                        hour: '19:58',
+                    },
+                    
+                        ]
+             },
+             {
+                nombre: 'Leandro Paredes',
+                id: 15,
+                thumbnail: '/images/paredes.png',
+                telefono: '+54 9 11 20222038',
+                frase: 'Siempre esperando para entrar',
+                archivos: '1',
+                mensajes:[
+                    {
+                        author: 'Leandro Paredes',
+                        text: 'Hola soy Lean',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:00',
+                    },
+                    {
+                        author: 'Leandro Paredes',
+                        text: 'Como estas?',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:04',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Eyy bostero',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:06',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Que se cuenta?',
+                        estado: 'enviado',
+                        day: 'hoy',
+                        hour: '20:06',
+                    },
+                    
+                        ]
+             },
+             {
+                nombre: 'Nico Gonzalez',
+                id: 16,
+                thumbnail: '/images/nico.png',
+                telefono: '+54 9 11 20222039',
+                frase: 'Pasion por la celeste y blanca',
+                archivos: '1',
+                mensajes:[
+                    {
+                        author: 'Nico Gonzalez',
+                        text: 'Hola soy Nico, como va?',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:00',
+                    },
+                    {
+                        author: 'Nico Gonzalez',
+                        text: 'Somos campeones otra vez!!!',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:05',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Eyy nico crack',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:06',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'Que bien entraste en la final!',
+                        estado: 'visto',
+                        day: 'hoy',
+                        hour: '20:06',
+                    },
+                    {
+                        author: 'yo',
+                        text: 'La ROMPISTE toda!!!',
+                        estado: 'enviado',
+                        day: 'hoy',
+                        hour: '20:10',
+                    },
+                    
                         ]
              }
             ]

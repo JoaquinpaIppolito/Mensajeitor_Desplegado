@@ -18,10 +18,11 @@
  
 }
 
-.fotoperfil{
-    display: flex;
-    width: 40px;
-    height: 40px;
+.fotoperfilchatheader{
+    width: 45px;
+    height: 45px;
+    border-radius:150px;
+    border:1px solid #ded7d7;
 }
 
 .nombreyestado{
