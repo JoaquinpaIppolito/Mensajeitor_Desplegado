@@ -33,8 +33,7 @@
 
 .cuerpocontacto{
     display: flex;
-    max-width: 780px;
-    min-width: 780px ;
+    width: 780px;
     justify-content: flex-start;
     align-items: center;
     padding:5px;
@@ -72,6 +71,50 @@
 }
 
 
+@media screen and (max-width: 320px) { 
 
+    .cajacontacto{
+        width: 60px;
+        overflow-x:hidden;
+        display:flex;
+    height: 60px;
+    padding-left: 0px;
+    }
+    .cuerpocontacto{
+        display: flex;
+        width: 60px;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding-right: 10px;
+      
+    }
+    
+    .nombrecontacto{
+        color: black;
+        width:60px;
+        font-size: 8px;
+        font-weight: 100;
+        text-align: center;
+        padding-right: 10px;
+    }
+    
+    .ultimomensaje{
+        display: none;
+    }
+    
+    
+    .fechacontacto{
+        display: none;
+    }
+
+    .fotoperfilcontactos{
+         width: 25px;
+        height: 25px;
+        border-radius:150px;
+        border:1px solid #ded7d7;
+  
+    }
+}
 
 

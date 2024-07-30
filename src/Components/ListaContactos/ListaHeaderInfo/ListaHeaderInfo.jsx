@@ -10,7 +10,7 @@ export const ListaHeaderInfo = () => {
     <div className='headercontenido1'>
       <div className='left1'>
         <img className='fotoperfil1' src='/images/fotoperfil.png' alt="foto de perfil" />
-        <span>{nombreUsuario}</span>
+        <span className='nombreusuario1'>{nombreUsuario}</span>
       </div>
       <div className='right1'>
         <span className='comunidad'><i class="bi bi-people"></i></span>

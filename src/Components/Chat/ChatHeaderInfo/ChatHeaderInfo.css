@@ -104,3 +104,37 @@
     font-size: 18px;
 }
 
+
+@media screen and (max-width: 320px) {
+    .headercontenido{
+        width: 260px;
+    }
+
+    .right{
+        width: 260px;
+    }
+    
+    .camaramarco{
+        display:none
+        
+    
+    }
+    
+    .camara{
+        display:none
+    }
+    
+    .flechaabajo{
+        display:none
+    }
+    
+    
+    .lupa{
+        display:none
+    }
+    
+    .mas{
+        display:none
+    }
+
+}
