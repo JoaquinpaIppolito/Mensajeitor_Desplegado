@@ -172,7 +172,7 @@ export const DATA_MOOK =[
                 archivos: '1',
                 mensajes:[
                     {
-                        author: 'Lisandro Martinez',
+                        author: 'Lautaro Martinez',
                         text: 'Hola soy lautaro, como va?',
                         estado: 'visto',
                         day: 'hoy',

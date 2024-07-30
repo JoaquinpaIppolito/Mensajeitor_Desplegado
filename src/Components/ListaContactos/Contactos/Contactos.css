@@ -6,7 +6,7 @@
 
 .cajacontacto{
     display:flex;
-    width: 790px;
+    width: 38vw;
     height: 90px;
     align-items: center;
     font-size: 10px;
@@ -33,7 +33,7 @@
 
 .cuerpocontacto{
     display: flex;
-    width: 780px;
+    width: 38vw;
     justify-content: flex-start;
     align-items: center;
     padding:5px;
@@ -62,23 +62,77 @@
 
 
 .fechacontacto{
-
-  
-    padding-left: 480px;
     color: #667781;
     font-size: 11px;
-    
+    margin-left: auto;
+    padding-right: 10px;
+    white-space: nowrap;
+
 }
+
+
+
+/* Large Desktops */
+@media screen and (max-width: 1200px) { 
+    .cajacontacto{
+        overflow-x:hidden;
+        height: 60px;
+    }
+
+
+    .fotoperfilcontactos{
+        width: 42px;
+        height: 42px;
+        border-radius:150px;
+        border:1px solid #ded7d7;
+    }
+}
+
+
+/* Desktops */
+@media screen and (max-width: 992px) { 
+    .cajacontacto{
+        overflow-x:hidden;
+        height: 60px;
+        padding-left: 0px;
+    }
+    .fotoperfilcontactos{
+
+    
+        width: 42px;
+        height: 42px;
+        border-radius:150px;
+        border:1px solid #ded7d7;
+    }
+}
+
+
+  /* Tablets */
+  @media screen and (max-width: 768px) { 
+    .cajacontacto{
+        overflow-x:hidden;
+        height: 60px;
+        padding-left: 0px;
+    }
+    .fotoperfilcontactos{
+
+    
+        width: 38px;
+        height: 38px;
+        border-radius:150px;
+        border:1px solid #ded7d7;
+    }
+  }
 
 
 @media screen and (max-width: 320px) { 
 
     .cajacontacto{
-        width: 60px;
+        width: 39vw;
         overflow-x:hidden;
         display:flex;
-    height: 60px;
-    padding-left: 0px;
+        height: 60px;
+        padding-left: 0px;
     }
     .cuerpocontacto{
         display: flex;

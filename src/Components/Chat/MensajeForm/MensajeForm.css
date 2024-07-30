@@ -1,9 +1,9 @@
 .formnuevomensaje{
-    width: 1200px;
+    width: 60vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    
 }
 
 
@@ -20,7 +20,7 @@ color:#54656F;
 
 .nuevomensaje{
     height: 35px;
-    width:85%;
+    width:80%;
     padding:10px;
     color:white;
     border-radius: 8px;
@@ -38,6 +38,92 @@ color:#54656F;
     cursor: pointer;
 }
 
+
+/* Max */
+@media screen and (max-width: 2000px) { 
+    .formnuevomensaje{
+        width: 1200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nuevomensaje{
+        width: 1000px;
+    }
+
+}
+
+
+/* Large Desktops */
+@media screen and (max-width: 1200px) { 
+    .formnuevomensaje{
+        width: 720px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nuevomensaje{
+        width: 560px;
+    }
+   
+    .signomas{
+        font-size: 25px;
+    }
+    .emoji{
+        font-size: 18px;
+        }
+        .botonenviar{
+            font-size: 18px;
+        }
+}
+
+
+/* Desktops */
+@media screen and (max-width: 992px) { 
+    .formnuevomensaje{
+        width: 595px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nuevomensaje{
+        width: 460px;
+    }
+   
+    .signomas{
+        font-size: 25px;
+    }
+    .emoji{
+        font-size: 18px;
+        }
+        .botonenviar{
+            font-size: 18px;
+        }
+}
+
+  /* Tablets */
+  @media screen and (max-width: 768px) { 
+    .formnuevomensaje{
+        width: 460px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1px;
+    }
+    .nuevomensaje{
+        width: 320px;
+    }
+   
+    .signomas{
+        font-size: 20px;
+    }
+    .emoji{
+        font-size: 15px;
+        }
+        .botonenviar{
+            font-size: 15px;
+        }
+  }
 
 @media screen and (max-width: 320px) { 
    

@@ -1,48 +1,17 @@
 
 
 
-body{
-    background-color: rgba(255, 255, 255, 0);
-    overflow-y: hidden;
-    overflow-x: hidden;
-    width: 2000px;
-    max-width: 2000px;
-}
 
 #root{
     display: flex;
     overflow-y: hidden;
     overflow-x: hidden;
-    width: 2000px;
-    max-width: 2000px;
+    width: 100vw;
+    height: 100vh;
   
 }
 
 
-@media screen and (max-width: 320px) { 
-
-    
-}
 
 
-
-/* Tablets */
-@media screen and (max-width: 768px) { 
-    
-}
-
-/* Desktops */
-@media screen and (max-width: 992px) { 
-    
-}
-
-/* Large Desktops */
-@media screen and (max-width: 1200px) { 
-    
-}
-
-/* Max */
-@media screen and (max-width: 2000px) { 
-    
-}
 
