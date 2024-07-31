@@ -12,6 +12,8 @@
     background-image: url(/images/fondoinfoscreen.jpg);
     background-repeat:repeat-x;
     overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 100px;
 }
 
 .headerinfo{
@@ -58,7 +60,7 @@
 }
 
 .fotogrande{
-    height: 200px;
+    height: 180px;
     border-radius:150px;
     border:5px solid #ded7d7;
 }
@@ -71,8 +73,8 @@
     height: 100px;
     padding: 25px;
     background-color: white;
-    color:#a1a3a4
-    
+    color:#a1a3a4;
+    gap: 5px;
 }
 
 .infofrase{
@@ -163,16 +165,16 @@
 @media screen and (max-width: 320px) { 
     .infocontenedor{
         gap: 5px;
-        padding: 5px;
+        padding-top: 25px;
         justify-content: flex-start;
         
     }
     .headerinfo{
         display: flex;
         justify-content: flex-start;
-        width: 80vw;
+        width: 75vw;
         gap: 10px;
-        padding: 0px;
+        padding-left: 0px;
         font-size: 10px;
     }
     .close{
