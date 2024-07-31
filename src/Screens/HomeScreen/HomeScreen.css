@@ -2,10 +2,11 @@
 .fondo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 2000px;
+    width: 100vw;
+    height: 100vh;
     background-image: url(/images/fondohome.jpg);
+    background-repeat:repeat-x;
     gap: 20px;
 }
 
@@ -13,10 +14,10 @@
 .logocontenedor{
     display: flex;
     align-items: center;
-    width: 1800px;
+    width: 80vw;
     height: 180px;
-    font-size: 30px;
-    color: white;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
     gap: 20px;
     font-weight: bold;
 }
@@ -27,7 +28,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1800px;
+    width: 80vw;
+    max-width: 1800px;
     height: 750px;
     color: black;
     background-color: white;
@@ -35,17 +37,15 @@
     border-radius: 20px;
     border: 1px solid rgb(204, 204, 204);
     gap: 60px;
+    box-shadow: 1px 1px 1px 1px #d1c8d1c8;
 }
 
 
 .homeheader{
     display: flex;
     align-items: center;
-    width: 1600px;
-    height: 150px;
-    border-radius: 10px;
-    border: 1px solid #D1D7DB ;
-    padding-left: 40px;
+    justify-content: center;
+    width: 60vw;
     gap:20px;
   
 }
@@ -57,25 +57,14 @@
 
 
 .titulo{
-    font-size:40px;
+    font-size:30px;
     font-weight: 100;
 }
-
-.descripcion{
-    font-size: 20px;
-    color: #728088
-}
-
 
 .forminiciar{
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.titulo1{
-    font-size:40px;
-    font-weight: 100;
 }
 
 .descripcion1{
@@ -86,8 +75,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 1600px;
+    justify-content: space-between;
+    width: 70vw;
     height: 400px;
     color: #728088;
 }
@@ -105,7 +94,7 @@
 .error{
     width: 400px;
     height: 30px;
-    color: black;
+    color: rgb(255, 0, 0);
     text-align: center;
 }
 
@@ -116,4 +105,314 @@
     background-color: #008069 ;
     color: white;
     font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+
+/* Large Desktops */
+@media screen and (max-width: 1200px) { 
+    .fondo{
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .logocontenedor{
+        font-size: 30px;
+    }
+
+    .homecontenedor{
+        height: 80vh;
+        padding: 30px;   
+    }
+
+    .homeheader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 900px;
+        padding: 0px;
+        gap:20px;
+        border: none;
+      }
+
+      .titulo{
+        font-size:25px;
+        font-weight: 100;
+    }
+
+    .descripcion1{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .error{
+        width: 400px;
+        height: 30px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+/* Desktops */
+@media screen and (max-width: 992px) { 
+    .fondo{
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .logocontenedor{
+        font-size: 25px;
+    }
+    
+    .homecontenedor{
+        height: 80vh;
+        padding: 30px;   
+    }
+
+    .homeheader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        padding: 0px;
+        gap:15px;
+        border: none;
+      }
+
+      .laptop{
+        height: 90px;
+     
+    }
+    
+    .titulo{
+        font-size:25px;
+        font-weight: 100;
+    }
+
+    .descripcion1{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .nuevousuario{
+        width: 400px;
+        height: 32px;
+        border-radius: 8px;
+        color:#54656F;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .error{
+        width: 400px;
+        height: 30px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-size: 9px;
+    }
+    
+    .iniciar{
+        height: 35px;
+        
+    }
+   
+    .version{
+        font-size: 12px;
+    }
+
+}
+
+
+  /* Tablets */
+  @media screen and (max-width: 768px) { 
+   
+    .fondo{
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .logocontenedor{
+        font-size: 20px;
+    }
+
+    .homecontenedor{
+        height: 80vh;
+        padding: 30px;
+        
+    }
+    
+    .homeheader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        padding-left: 0px;
+        gap:10px;
+        border: none;
+       }
+
+    .laptop{
+        height: 40px;
+     
+    }
+    
+    .titulo{
+        font-size:15px;
+        font-weight: 100;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+        height: 70vh;
+        color: #728088;
+    }
+
+    .forminiciar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .descripcion1{
+        font-size: 12px;
+    }
+    
+    .nuevousuario{
+        width: 220px;
+        height: 30px;
+        border-radius: 8px;
+        color:#54656F;
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .error{
+        width: 200px;
+        height: 30px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-size: 9px;
+    }
+    
+    .iniciar{
+        width: 180px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #008069 ;
+        color: white;
+        font-size: 12px;
+    }
+   
+    .version{
+        font-size: 9px;
+    }
+
+    }
+    
+
+@media screen and (max-width: 320px) { 
+    .fondo{
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .logocontenedor{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        gap: 10px;
+        font-weight: bold;
+    }
+
+    .homecontenedor{
+        display: flex;
+        justify-content: space-between;
+        height: 80vh;
+        padding: 30px;
+        border-radius: 20px;
+        gap: 60px;
+    }
+    .homeheader{
+        display: flex;
+        align-items: center;
+        width: 220px;
+        padding-left: 0px;
+        gap:10px;
+        border: none;
+      
+    }
+    .laptop{
+        height: 30px;
+     
+    }
+    
+    .titulo{
+        font-size:12px;
+        font-weight: 100;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        height: 70vh;
+        color: #728088;
+    }
+
+    .forminiciar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .descripcion1{
+        font-size: 10px;
+    }
+    
+    .nuevousuario{
+        width: 220px;
+        height: 30px;
+        border-radius: 8px;
+        color:#54656F;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .error{
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        font-size: 9px;
+    }
+    
+    .iniciar{
+        width: 180px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #008069 ;
+        color: white;
+        font-size: 12px;
+    }
+   
+    .version{
+        font-size: 8px;
+    }
 }

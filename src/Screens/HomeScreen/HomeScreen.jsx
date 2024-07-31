@@ -32,20 +32,19 @@ const [error, seterror] = useState('');
         <div className='homeheader'>
         <img className='laptop' src='/images/imagenlaptop.png' alt="imagen laptop" />
             <div className='tituloydescripcion'>
-            <h2 className='titulo'>Disfruta WhatsApp</h2>
-            <span className='descripcion'>Haz llamadas, comparte pantalla y vive una experiencia mas rapida en esta aplicacion.</span>
+            <h1 className='titulo'>Comenzar a usar Whatsapp</h1>
             </div>
         </div>
         <div className='home'>
-            <h2 className='titulo1'>Comenzar a usar Whatsapp</h2>
             <form onSubmit={handleSubmit} className='forminiciar'>
             <span className='descripcion1'>Escribe tu nombre de usuario:</span>
             <br></br>
-            <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Escribe tu nombre de usuario' maxlength="30" />
+            <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Ej: Usuario1' maxlength="30" />
             <span className='error'>{error}</span>
             <button className='iniciar' type='submit'>Iniciar</button>
             <br></br>
             </form>
+            <span className='version'>Ver 1.0</span>
             </div>   
     </div>
     </div>
