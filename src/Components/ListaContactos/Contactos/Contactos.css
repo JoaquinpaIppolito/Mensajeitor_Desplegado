@@ -125,6 +125,35 @@
   }
 
 
+  @media screen and (max-width: 750px) {
+    .fechacontacto{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .ultimomensaje{
+        display: none;
+    }
+    .nombrecontacto{
+        font-size: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .nombrecontacto{
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .nombreyultimomensaje{
+        padding: 3px;
+     }
+  }
+
+
+
+
 @media screen and (max-width: 320px) { 
 
     .cajacontacto{
@@ -143,6 +172,10 @@
         padding-right: 10px;
       
     }
+
+    .nombreyultimomensaje{
+        padding-left: 10px;
+     }
     
     .nombrecontacto{
         color: black;

@@ -56,6 +56,7 @@
 
 .camaramarco{
     display:flex;
+    justify-content: space-between;
     border-radius: 15px;
     width: 60px;
     height: 35px;
@@ -103,36 +104,52 @@
 }
 
 
+@media screen and (max-width: 992px) { 
+    .camaramarco{
+        width: 50px;
+    }
+    .camara{
+        font-size: 10px;
+    }
+    .lupa{
+        font-size: 10px;
+    }
+    .mas{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .right{
+        display: flex;
+        justify-content: space-evenly;
+        gap:5px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .right{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .headercontenido{
         width: 260px;
     }
 
-    .right{
+    .left{
         width: 260px;
     }
     
-    .camaramarco{
-        display:none
-        
-    
-    }
-    
-    .camara{
-        display:none
-    }
-    
-    .flechaabajo{
-        display:none
-    }
-    
-    
-    .lupa{
-        display:none
-    }
-    
-    .mas{
-        display:none
+  .right{
+    display: none;
+  }
+
+    .nombre{
+        font-size: 12px;
+        padding-right: 20px;
     }
 
 }

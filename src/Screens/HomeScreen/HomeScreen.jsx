@@ -39,7 +39,7 @@ const [error, seterror] = useState('');
             <form onSubmit={handleSubmit} className='forminiciar'>
             <span className='descripcion1'>Escribe tu nombre de usuario:</span>
             <br></br>
-            <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Ej: Usuario1' maxlength="30" />
+            <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Ej: Usuario1' maxLength="30" />
             <span className='error'>{error}</span>
             <button className='iniciar' type='submit'>Iniciar</button>
             <br></br>

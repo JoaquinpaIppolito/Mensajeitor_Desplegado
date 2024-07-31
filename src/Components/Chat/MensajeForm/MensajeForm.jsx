@@ -18,7 +18,7 @@ export const MensajeForm = ({handleSubmitNuevoMensaje}) => {
     <form onSubmit={handleSubmit} className='formnuevomensaje'>
     <span className='emoji'><i class="bi bi-emoji-laughing"></i></span>
     <span className='signomas'><i class="bi bi-plus"></i></span>
-    <input className='nuevomensaje' type='text' name='nuevomje' placeholder='Escribe un mensaje'/>
+    <input className='nuevomensaje' type='text' name='nuevomje' placeholder='Escribe un mensaje' maxlength="80"/>
     <button className='botonenviar' type='submit'><i class="bi bi-send-fill"></i></button>
     </form>
   

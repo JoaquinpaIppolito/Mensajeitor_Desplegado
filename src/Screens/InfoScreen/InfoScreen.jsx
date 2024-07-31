@@ -37,7 +37,7 @@ const obtenerContactos = () => {
             <span className='infofrase'>{contacto.frase}</span>
         </div>
         <div className='archivos'>
-            <span className='textoarchivos'>Archivos, enlaces y documentos</span>
+            <span className='textoarchivos'>Archivos y documentos</span>
             <span className='signoarchivos'>{contacto.archivos} <i class="bi bi-chevron-right"></i></span>
         </div>
         <div className='otros'>

@@ -7,14 +7,14 @@
 
 
 .chatcontenedor{
-    width: 60vw;
+    width: 61vw;
     height: 100vh;
     
 }
 
 .header{
     display: flex;
-    width: 60vw;
+    width: 61vw;
     height: 60px;
     align-items: center;
     background-color: #F0F2F5 ;
@@ -24,7 +24,7 @@
 
 
 .chat{
-    width:60vw;
+    width:61vw;
     height: calc(100vh - 120px);
     background-image: url(/images/fondows.jpg);
     background-repeat: repeat;
@@ -36,7 +36,7 @@
 
     .footer{
         display: flex;
-        width: 60vw;
+        width: 61vw;
         height: 60px;
         align-items: center;
         justify-content: space-between;
@@ -72,14 +72,12 @@
         overflow-y: scroll;
         border-bottom: 1px solid #F2F4F5;
         padding-top: 60px;
-        
+        overflow-x: hidden;
         }
 
  
 /* Mediaquerys */
 
-
-   
 
 
     @media screen and (max-width: 320px) { 

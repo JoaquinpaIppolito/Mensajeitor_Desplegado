@@ -154,6 +154,13 @@ font-size: 18px;
 }
 
 
+@media screen and (max-width: 620px) {
+    .right1{
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 320px) {
     .headercontenido1{
         width: 65px;
