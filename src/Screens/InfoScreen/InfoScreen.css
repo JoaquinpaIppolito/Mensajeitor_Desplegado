@@ -248,3 +248,55 @@
     }
 
 }
+
+
+@media screen and (max-height: 375px) { 
+    .infocontenedor{
+        gap: 5px;
+        padding-top: 25px;
+        justify-content: flex-start;
+        
+    }
+    .fotoperfilgrande{
+        gap:2px;
+    }
+    .headerinfo{
+        width: 95%;
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .close{
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 2px;
+    }
+    .fotogrande{
+        height: 70px;
+        border-radius:150px;
+        border:5px solid #ded7d7;
+    }
+    .nombreperfil{
+        font-size: 10px;
+    }
+    .telefonoperfil{
+        font-size: 9px;
+    }
+    .otros{
+        font-size: 10px;
+        gap: 5px;
+    }
+    .info{
+        font-size: 9px;
+        gap: 1px;
+        padding: 10px;
+    }
+    .infofrase{
+        font-size: 10px;
+    }
+    .archivos{
+        font-size: 10px;
+    }
+
+}
+
+

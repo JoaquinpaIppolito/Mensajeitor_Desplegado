@@ -372,3 +372,98 @@
         font-size: 8px;
     }
 }
+
+
+@media screen and (max-height: 375px) {
+    .fondo{
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .logocontenedor{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        gap: 10px;
+        font-weight: bold;
+    }
+
+    .homecontenedor{
+        display: flex;
+        justify-content: space-between;
+        height: 80vh;
+        padding: 30px;
+        border-radius: 20px;
+        gap: 60px;
+    }
+    .homeheader{
+        display: flex;
+        align-items: center;
+        width: 220px;
+        padding-left: 0px;
+        gap:10px;
+        border: none;
+      
+    }
+    .laptop{
+        height: 30px;
+     
+    }
+    
+    .titulo{
+        font-size:12px;
+        font-weight: 100;
+    }
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        height: 70vh;
+        color: #728088;
+    }
+
+    .forminiciar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .descripcion1{
+        font-size: 10px;
+    }
+    
+    .nuevousuario{
+        width: 220px;
+        height: 30px;
+        border-radius: 8px;
+        color:#54656F;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .error{
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        font-size: 9px;
+    }
+    
+    .iniciar{
+        width: 180px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #008069 ;
+        color: white;
+        font-size: 12px;
+    }
+   
+    .version{
+        font-size: 8px;
+    }
+}
