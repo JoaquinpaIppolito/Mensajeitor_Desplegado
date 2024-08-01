@@ -68,12 +68,6 @@ padding-top: 2px;
 font-size: 20px;
 }
 
-.menu{
-padding-right: 20px;
-color:#54656F;
-padding-top: 3px;
-font-size: 18px;
-}
 
 
 /* Desktops */
@@ -139,9 +133,6 @@ font-size: 18px;
         font-size: 15px;
     }
     
-    .menu{
-        font-size: 15px;
-    }
 
     .fotoperfil1{
         width: 40px;
@@ -155,9 +146,23 @@ font-size: 18px;
 
 
 @media screen and (max-width: 620px) {
-    .right1{
-        display: none;
+    .comunidad{
+        display:none
     }
+    .estados{
+        display:none
+    }
+    .canales{
+        display:none
+    }
+    .nuevochat{
+        display:none
+    }
+    .right1{
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+
 }
 
 
