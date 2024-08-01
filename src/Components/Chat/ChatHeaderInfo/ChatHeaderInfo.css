@@ -104,6 +104,14 @@
 }
 
 
+/* Large Desktops */
+@media screen and (max-width: 1200px) { 
+    .nombre{
+        font-size: 14px;
+    }
+}
+
+
 @media screen and (max-width: 992px) { 
     .camaramarco{
         width: 50px;
@@ -119,37 +127,47 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
     .right{
-        display: flex;
-        justify-content: space-evenly;
-        gap:5px;
-        width: 100px;
+        justify-content: flex-end;
+        gap: 10px;
+        width: 50px;
     }
-}
-
-@media screen and (max-width: 400px) {
-    .right{
+    .camaramarco{
+       display: none;
+    }
+    .camara{
         display: none;
     }
-}
-
-@media screen and (max-width: 320px) {
-    .headercontenido{
-        width: 260px;
-    }
-
-    .left{
-        width: 260px;
-    }
-    
-  .right{
-    display: none;
   }
 
+
+@media screen and (max-width: 480px) {
+    .right{
+        justify-content: flex-end;
+        gap:0px;
+
+    }
+    .fotoperfilchatheader{
+        width: 35px;
+        height: 35px;
+    }
     .nombre{
-        font-size: 12px;
-        padding-right: 20px;
+        font-size: 10px;
+        padding-right: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .right{
+        justify-content: flex-end;
+        gap:3px;
+
+    }
+    .headercontenido{
+        width: 260px;
     }
 
 }

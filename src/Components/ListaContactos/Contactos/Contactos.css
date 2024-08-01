@@ -14,6 +14,7 @@
     border-top: 1px solid #F2F4F5;
     border-bottom: 1px solid #F2F4F5;
     padding-left: 5px;
+    overflow: hidden;
     }
 
     .cajacontacto:hover {
@@ -45,19 +46,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap:2px;
     padding-left: 10px;
-    
+    max-width: 75%;
 }
 
 .nombrecontacto{
     color: black;
     width:200px;
-    
+    font-size: 14px;
 }
 
 .ultimomensaje{
     color: #667781;
+    font-size: 12px;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 
@@ -86,6 +92,9 @@
         border-radius:150px;
         border:1px solid #ded7d7;
     }
+    .nombrecontacto{
+        font-size: 10px;
+    }
 }
 
 
@@ -103,6 +112,15 @@
         height: 42px;
         border-radius:150px;
         border:1px solid #ded7d7;
+    }
+    .nombrecontacto{
+        font-size: 12px;
+    }
+    .ultimomensaje{
+        font-size: 10px;
+    }
+    .fechacontacto{
+        font-size: 9px;
     }
 }
 
@@ -122,26 +140,29 @@
         border-radius:150px;
         border:1px solid #ded7d7;
     }
+ 
   }
 
 
-  @media screen and (max-width: 750px) {
+
+  @media screen and (max-width: 680px) {
+    .nombrecontacto{
+        font-size: 10px;
+    }
+    .ultimomensaje{
+        font-size: 8px;
+    }
     .fechacontacto{
         display: none;
     }
   }
 
-  @media screen and (max-width: 680px) {
-    .ultimomensaje{
-        display: none;
-    }
-    .nombrecontacto{
-        font-size: 10px;
-    }
-  }
 
 
   @media screen and (max-width: 480px) {
+    .ultimomensaje{
+        display: none;
+    }
     .nombrecontacto{
         font-size: 8px;
         font-weight: 400;
@@ -174,7 +195,7 @@
     }
 
     .nombreyultimomensaje{
-        padding-left: 10px;
+        padding-left: 0px;
      }
     
     .nombrecontacto{
@@ -183,18 +204,9 @@
         font-size: 8px;
         font-weight: 100;
         text-align: center;
-        padding-right: 10px;
+        padding-right: 25px;
     }
     
-    .ultimomensaje{
-        display: none;
-    }
-    
-    
-    .fechacontacto{
-        display: none;
-    }
-
     .fotoperfilcontactos{
          width: 25px;
         height: 25px;

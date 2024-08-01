@@ -9,6 +9,7 @@
     background-repeat:repeat-x;
     gap: 20px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
