@@ -42,6 +42,7 @@
         justify-content: space-between;
         background-color: #F0F2F5 ;
         position: fixed; 
+        bottom: 0;
     }
  
     ::-webkit-scrollbar {
