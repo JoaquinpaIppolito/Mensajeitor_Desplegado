@@ -3,11 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
     width: 100vw;
     height: 100vh;
     background-color: #f0f2f5;
-    gap: 15px;
+    gap: 10px;
     color:black;
     background-image: url(/images/fondoinfoscreen.jpg);
     background-repeat:repeat-x;
@@ -19,12 +18,14 @@
 .headerinfo{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 95%;
-    height: 5vh;
     gap: 20px;
     background-color: white;
     font-size: 18px;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+   
+
 }
 
 .close{
@@ -38,13 +39,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:center;
     width: 100%;
-    height: 35vh;
     background-color: white;
-    border-top-left-radius: 20px ;
-    border-top-right-radius: 20px;
-    padding-bottom: 10px;
+    
 }
 
 
@@ -54,11 +52,12 @@
 
 .telefonoperfil{
     font-size: 18px;
-    color:#797b7c
+    color:#797b7c;
+    padding-bottom: 20px;
 }
 
 .fotogrande{
-    height: 180px;
+    height: 150px;
     border-radius:150px;
     border:5px solid #ded7d7;
 }
@@ -68,11 +67,10 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    min-height: 12vh;
     padding: 25px;
     background-color: white;
     color:#a1a3a4;
-    gap: 5px;
+    gap: 2px;
 }
 
 .infofrase{
@@ -86,17 +84,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 5vh;
     padding: 30px;
     background-color: white;
-    color:#a1a3a4
+    color:#a1a3a4;
 }
 
 .otros{
     display:flex;
     flex-direction: column;
     width: 100%;
-    height: 35vh;
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -161,37 +157,9 @@
 
 
 
-@media screen and (max-width: 1200px) { 
-    .infocontenedor{
-        padding: 75px;
-    }
-    .headerinfo{
-        padding-left: 10px;
-    }
-    .nombreperfil{
-        font-size: 30px;
-    }
-}
-
-
-@media screen and (max-width: 680px) {
-    .infocontenedor{
-        padding: 50px;
-    }
-    .headerinfo{
-        width: 90%;
-    }
-
-}
-
 
 @media screen and (max-width: 550px) {
-    .infocontenedor{
-        padding: 40px;
-    }
-    .fotoperfilgrande{
-        height: 400px;
-    }
+
     .fotogrande{
         height: 100px;
         border-radius:100px;
@@ -203,105 +171,71 @@
     .telefonoperfil{
         font-size: 15px;
     }
-    .headerinfo{
-        width: 80%;
-    }
     .infoinfo{
-        font-size: 8px;
+        font-size: 12px;
     }
     .close{
-        font-size: 10px;
+        font-size: 15px;
+    }
+    .infofrase{
+        font-size: 14px;
     }
     
 }
 
 
-@media screen and (max-width: 375px) { 
-    .infocontenedor{
+@media screen and (max-width: 480px) {
+    .infocontenedor {
+        padding: 20px;
         gap: 5px;
-        padding-top: 25px;
-        justify-content: flex-start;
-        
     }
-    .headerinfo{
-        width: 85%;
+
+    .headerinfo {
+        font-size: 14px;
+        padding-left: 5px;
     }
-    .close{
-        font-size: 15px;
-        cursor: pointer;
-        padding-top: 2px;
-    }
-    .nombreperfil{
-        font-size: 15px;
-    }
-    .telefonoperfil{
+
+    .close {
         font-size: 12px;
     }
-    .otros{
-        font-size: 10px;
-        gap: 5px;
-    }
-    .info{
-        font-size: 10px;
-        gap:1px;
-    }
-    .infofrase{
-        font-size: 11px;
-    }
-    .archivos{
-        font-size: 10px;
+
+    .fotoperfilgrande {
+        width: 100%;
     }
 
+    .fotogrande {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #ded7d7;
+    }
+
+    .nombreperfil {
+        font-size: 18px;
+    }
+
+    .telefonoperfil {
+        font-size: 12px;
+    }
+
+    .info, .archivos, .otros {
+        padding: 15px;
+    }
+
+    .infofrase, .archivos {
+        font-size: 12px;
+    }
+
+    .destacados, .silenciar, .temporales, .cifrado {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .destacadosleft, .silenciarleft, .temporalesleft {
+        gap: 10px;
+    }
+
+    .toggle {
+        font-size: 20px;
+    }
 }
-
-
-@media screen and (max-height: 680px) { 
-    .infocontenedor{
-        gap: 5px;
-        padding-top: 25px;
-        justify-content: flex-start;
-        
-    }
-    .fotoperfilgrande{
-        gap:2px;
-    }
-    .headerinfo{
-        width: 95%;
-        font-size: 10px;
-        padding-top: 10px;
-    }
-    .close{
-        font-size: 15px;
-        cursor: pointer;
-        padding-top: 2px;
-    }
-    .fotogrande{
-        height: 70px;
-        border-radius:150px;
-        border:5px solid #ded7d7;
-    }
-    .nombreperfil{
-        font-size: 10px;
-    }
-    .telefonoperfil{
-        font-size: 9px;
-    }
-    .otros{
-        font-size: 10px;
-        gap: 5px;
-    }
-    .info{
-        font-size: 9px;
-        gap: 1px;
-        padding: 10px;
-    }
-    .infofrase{
-        font-size: 10px;
-    }
-    .archivos{
-        font-size: 10px;
-    }
-
-}
-
-
