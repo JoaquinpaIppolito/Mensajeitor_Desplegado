@@ -193,8 +193,9 @@
         height: 400px;
     }
     .fotogrande{
-        width: 150px;
-        height: 150px;
+        height: 100px;
+        border-radius:100px;
+        border:2px solid #ded7d7;
     }
     .nombreperfil{
         font-size: 25px;
@@ -203,9 +204,13 @@
         font-size: 15px;
     }
     .headerinfo{
-        width: 90%;
-        font-size: 14px;
-        padding-left: 0px;
+        width: 80%;
+    }
+    .infoinfo{
+        font-size: 8px;
+    }
+    .close{
+        font-size: 10px;
     }
     
 }
@@ -250,7 +255,7 @@
 }
 
 
-@media screen and (max-height: 375px) { 
+@media screen and (max-height: 680px) { 
     .infocontenedor{
         gap: 5px;
         padding-top: 25px;
