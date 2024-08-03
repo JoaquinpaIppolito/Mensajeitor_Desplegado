@@ -10,15 +10,15 @@ import InfoScreen from './Screens/InfoScreen/InfoScreen'
 function App() {
 
   return (
-  
-<Routes>
-    <Route path='/' element={<HomeScreen/>} />
-    <Route path='/info/:id' element={<InfoScreen/>} />
-    <Route path='/chat/:id' element={<ChatScreen/>}/>
-    
-    
-</Routes>
-  
+
+    <Routes>
+      <Route path='/' element={<HomeScreen />} />
+      <Route path='/info/:id' element={<InfoScreen />} />
+      <Route path='/chat/:id' element={<ChatScreen />} />
+
+
+    </Routes>
+
   )
 }
 export default App

@@ -1,6 +1,4 @@
-
-
-.headercontenido1{
+.headercontenido1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,7 +7,7 @@
 }
 
 
-.left1{
+.left1 {
     display: flex;
     align-items: center;
     max-width: 300px;
@@ -17,15 +15,15 @@
     gap: 5px;
 }
 
-.fotoperfil1{
- 
+.fotoperfil1 {
+
     width: 45px;
     height: 45px;
-    border-radius:100px;
-    border:1px solid white;
+    border-radius: 100px;
+    border: 1px solid white;
 }
 
-.nombreyestado1{
+.nombreyestado1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -35,130 +33,136 @@
 
 
 
-.right1{
+.right1 {
     display: flex;
     justify-content: space-between;
     width: 180px;
-   
+
 }
 
 
-.comunidad{
-color:#54656F;
-padding-top: 2px;
-font-size: 20px;
-}
-
-.estados{
-    color:#45545c;
+.comunidad {
+    color: #54656F;
     padding-top: 2px;
     font-size: 20px;
-    
 }
 
-.canales{
-    color:#54656F;
-padding-top: 2px;
-font-size: 20px;
+.estados {
+    color: #45545c;
+    padding-top: 2px;
+    font-size: 20px;
+
 }
 
-.nuevochat{
-color:#54656F;
-padding-top: 2px;
-font-size: 20px;
+.canales {
+    color: #54656F;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.nuevochat {
+    color: #54656F;
+    padding-top: 2px;
+    font-size: 20px;
 }
 
 
 
 /* Desktops */
-@media screen and (max-width: 992px) { 
-    .right1{
+@media screen and (max-width: 992px) {
+    .right1 {
         gap: 10px;
-     }
+    }
 
-     .comunidad{
+    .comunidad {
 
         font-size: 16px;
-        }
-        
-        .estados{
-            font-size: 16px;
-            
-        }
-        
-        .canales{
-            font-size: 16px;
-        }
-        
-        .nuevochat{
-            font-size: 16px;
-        }
-        
-        .menu{
-            font-size: 16px;
-        }
-    
-        .fotoperfil1{
-            width: 38px;
-            height: 38px;
-        }
-        .nombreusuario1{
-            font-size: 14px;
-        }
+    }
+
+    .estados {
+        font-size: 16px;
+
+    }
+
+    .canales {
+        font-size: 16px;
+    }
+
+    .nuevochat {
+        font-size: 16px;
+    }
+
+    .menu {
+        font-size: 16px;
+    }
+
+    .fotoperfil1 {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nombreusuario1 {
+        font-size: 14px;
+    }
 
 }
 
 
 /* Tablets */
-@media screen and (max-width: 768px) { 
-       .right1{
-       gap: 8px;
+@media screen and (max-width: 768px) {
+    .right1 {
+        gap: 8px;
     }
 
-    .comunidad{
+    .comunidad {
 
-    font-size: 15px;
-    }
-    
-    .estados{
-        font-size: 15px;
-        
-    }
-    
-    .canales{
         font-size: 15px;
     }
-    
-    .nuevochat{
-        font-size: 15px;
-    }
-    
 
-    .fotoperfil1{
+    .estados {
+        font-size: 15px;
+
+    }
+
+    .canales {
+        font-size: 15px;
+    }
+
+    .nuevochat {
+        font-size: 15px;
+    }
+
+
+    .fotoperfil1 {
         width: 40px;
         height: 40px;
     }
-    .nombreusuario1{
+
+    .nombreusuario1 {
         font-size: 12px;
     }
- 
+
 }
 
 
 @media screen and (max-width: 620px) {
-    .comunidad{
-        display:none
+    .comunidad {
+        display: none
     }
-    .estados{
-        display:none
+
+    .estados {
+        display: none
     }
-    .canales{
-        display:none
+
+    .canales {
+        display: none
     }
-    .nuevochat{
-        display:none
+
+    .nuevochat {
+        display: none
     }
-    .right1{
+
+    .right1 {
         justify-content: flex-end;
         padding-right: 15px;
     }
@@ -168,29 +172,33 @@ font-size: 20px;
 
 
 @media screen and (max-width: 320px) {
-    .headercontenido1{
+    .headercontenido1 {
         width: 65px;
         padding-left: 0px;
     }
-    .right1{
+
+    .right1 {
         display: none;
     }
-    .left1{
+
+    .left1 {
         width: 65px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap:0px;
+        gap: 0px;
 
     }
-    .fotoperfil1{
+
+    .fotoperfil1 {
         width: 30px;
         height: 30px;
     }
-    .nombreusuario1{
+
+    .nombreusuario1 {
         font-size: 10px;
     }
 
-    
+
 }

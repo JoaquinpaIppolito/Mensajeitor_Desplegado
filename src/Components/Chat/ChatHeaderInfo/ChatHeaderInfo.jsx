@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom'
 import { BsCameraVideoFill } from 'react-icons/bs'
 import { FaChevronDown } from 'react-icons/fa6'
 import { BiSearchAlt } from 'react-icons/bi'
-import { MdOutlineMoreVert } from 'react-icons/md'
+import { TiInfoLargeOutline } from 'react-icons/ti'
 
 
 
 
-export const ChatHeaderInfo = ({contactodata}) => {
-const {nombre, id, mensajes,thumbnail,ultima_conexion} = contactodata
+export const ChatHeaderInfo = ({ contactodata }) => {
+  const { nombre, id, mensajes, thumbnail, ultima_conexion } = contactodata
 
 
 
-  
+
   return (
     <div className='headercontenido'>
       <Link to={`/info/${id}`}>
-      <div className='left'>
-      <img className='fotoperfilchatheader' src={thumbnail} alt="foto de perfil" />
+        <div className='left'>
+          <img className='fotoperfilchatheader' src={thumbnail} alt="foto de perfil" />
           <div className='nombreyestado'>
             <h2 className='nombre'>{nombre}</h2>
             <span className='contactoestado' name='contactoestado'>En Linea</span>
           </div>
-      </div>
+        </div>
       </Link>
       <div className='right'>
         <div className='camaramarco'>
@@ -32,8 +32,10 @@ const {nombre, id, mensajes,thumbnail,ultima_conexion} = contactodata
           <FaChevronDown className='flechaabajo' />
         </div>
         <BiSearchAlt className='lupa' />
-        <MdOutlineMoreVert className='mas'/>   
-        </div>
+        <Link to={`/info/${id}`}>
+        <TiInfoLargeOutline className='infoscreenicon' />
+        </Link>
       </div>
+    </div>
   )
 }

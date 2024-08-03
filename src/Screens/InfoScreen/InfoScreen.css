@@ -1,5 +1,4 @@
-
-.infocontenedor{
+.infocontenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,15 +6,15 @@
     height: 100vh;
     background-color: #f0f2f5;
     gap: 10px;
-    color:black;
+    color: black;
     background-image: url(/images/fondoinfoscreen.jpg);
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 100px;
 }
 
-.headerinfo{
+.headerinfo {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -24,73 +23,73 @@
     margin-right: auto;
     padding-left: 10px;
     padding-top: 10px;
-   
+
 
 }
 
-.close{
+.close {
     font-size: 26px;
     cursor: pointer;
     border-style: hidden;
     background-color: white;
 }
 
-.fotoperfilgrande{
+.fotoperfilgrande {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     background-color: white;
-    
+
 }
 
 
-.nombreperfil{
+.nombreperfil {
     font-size: 35px;
 }
 
-.telefonoperfil{
+.telefonoperfil {
     font-size: 18px;
-    color:#797b7c;
+    color: #797b7c;
     padding-bottom: 20px;
 }
 
-.fotogrande{
+.fotogrande {
     height: 150px;
-    border-radius:150px;
-    border:5px solid #ded7d7;
+    border-radius: 150px;
+    border: 5px solid #ded7d7;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     padding: 25px;
     background-color: white;
-    color:#a1a3a4;
+    color: #a1a3a4;
     gap: 2px;
 }
 
-.infofrase{
+.infofrase {
     font-size: 16px;
     font-weight: bold;
-    color:black
+    color: black
 }
 
-.archivos{
+.archivos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 30px;
     background-color: white;
-    color:#a1a3a4;
+    color: #a1a3a4;
 }
 
-.otros{
-    display:flex;
+.otros {
+    display: flex;
     flex-direction: column;
     width: 100%;
     background-color: white;
@@ -100,7 +99,7 @@
     padding: 25px;
 }
 
-.destacados{
+.destacados {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,12 +108,12 @@
     gap: 25px;
 }
 
-.destacadosleft{
-    display:flex;
+.destacadosleft {
+    display: flex;
     gap: 20px;
 }
 
-.silenciar{
+.silenciar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,18 +122,18 @@
     gap: 25px;
 }
 
-.silenciarleft{
-    display:flex;
+.silenciarleft {
+    display: flex;
     gap: 20px;
 }
 
-.toggle{
+.toggle {
     font-size: 25px;
-    color:#585858;
+    color: #585858;
     cursor: pointer;
 }
 
-.temporales{
+.temporales {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,12 +141,12 @@
     padding: 10px;
 }
 
-.temporalesleft{
-    display:flex;
+.temporalesleft {
+    display: flex;
     gap: 20px;
 }
 
-.cifrado{
+.cifrado {
     display: flex;
     align-items: center;
     height: 25%;
@@ -160,27 +159,32 @@
 
 @media screen and (max-width: 550px) {
 
-    .fotogrande{
+    .fotogrande {
         height: 100px;
-        border-radius:100px;
-        border:2px solid #ded7d7;
+        border-radius: 100px;
+        border: 2px solid #ded7d7;
     }
-    .nombreperfil{
+
+    .nombreperfil {
         font-size: 25px;
     }
-    .telefonoperfil{
+
+    .telefonoperfil {
         font-size: 15px;
     }
-    .infoinfo{
+
+    .infoinfo {
         font-size: 12px;
     }
-    .close{
+
+    .close {
         font-size: 15px;
     }
-    .infofrase{
+
+    .infofrase {
         font-size: 14px;
     }
-    
+
 }
 
 
@@ -218,20 +222,28 @@
         font-size: 12px;
     }
 
-    .info, .archivos, .otros {
+    .info,
+    .archivos,
+    .otros {
         padding: 15px;
     }
 
-    .infofrase, .archivos {
+    .infofrase,
+    .archivos {
         font-size: 12px;
     }
 
-    .destacados, .silenciar, .temporales, .cifrado {
+    .destacados,
+    .silenciar,
+    .temporales,
+    .cifrado {
         padding: 5px;
         gap: 10px;
     }
 
-    .destacadosleft, .silenciarleft, .temporalesleft {
+    .destacadosleft,
+    .silenciarleft,
+    .temporalesleft {
         gap: 10px;
     }
 

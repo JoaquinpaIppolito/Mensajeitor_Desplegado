@@ -16,14 +16,14 @@ const MenuContactos = () => {
   return (
     <div className="menu-contactos-contenedor">
       <div className={`iconohamburguesa ${estaAbierto ? 'abierto' : ''}`} onClick={toggleMenu}>
-      <RxHamburgerMenu />
+        <RxHamburgerMenu />
       </div>
       <div className={`menu ${estaAbierto ? 'open' : ''}`}>
         <ul>
-          <li><FaUserGroup/></li>
-          <li><PiBroadcast/></li>
-          <li><IoChatbubbleEllipsesOutline/></li>
-          <li><RiChatNewLine/></li>
+          <li><FaUserGroup /></li>
+          <li><PiBroadcast /></li>
+          <li><IoChatbubbleEllipsesOutline /></li>
+          <li><RiChatNewLine /></li>
         </ul>
       </div>
     </div>

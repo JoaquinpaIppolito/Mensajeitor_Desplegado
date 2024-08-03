@@ -18,12 +18,12 @@ export const ListaHeaderInfo = () => {
         <span className='nombreusuario1'>{nombreUsuario}</span>
       </div>
       <div className='right1'>
-        <FaUserGroup className='comunidad'/>
-        <PiBroadcast className='estados'/>
+        <FaUserGroup className='comunidad' />
+        <PiBroadcast className='estados' />
         <IoChatbubbleEllipsesOutline className='canales' />
         <RiChatNewLine className='nuevochat' />
-        <MenuContactos/>   
-        </div>
+        <MenuContactos />
       </div>
+    </div>
   )
 }
