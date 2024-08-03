@@ -33,7 +33,7 @@ export const ChatHeaderInfo = ({ contactodata }) => {
         </div>
         <BiSearchAlt className='lupa' />
         <Link to={`/info/${id}`}>
-        <TiInfoLargeOutline className='infoscreenicon' />
+          <TiInfoLargeOutline className='infoscreenicon' />
         </Link>
       </div>
     </div>

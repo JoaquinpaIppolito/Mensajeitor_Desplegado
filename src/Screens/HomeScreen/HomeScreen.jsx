@@ -11,12 +11,12 @@ const HomeScreen = () => {
     let contactos = localStorage.getItem('MOOK')
     return JSON.parse(contactos)
   }
-  
+
   const agregarContactos = (contactos) => {
     localStorage.setItem('MOOK', JSON.stringify(contactos))
   }
-  
-  
+
+
   if (obtenerContactos() === null) {
     agregarContactos(DATA_MOOK)
   }
