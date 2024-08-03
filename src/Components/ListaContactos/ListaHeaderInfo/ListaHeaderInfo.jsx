@@ -3,14 +3,23 @@ import './ListaHeaderInfo.css'
 import MenuContactos from '../../../Menu/MenuContactos/MenuContactos'
 import { FaUserGroup } from 'react-icons/fa6'
 import { PiBroadcast } from 'react-icons/pi'
-import { IoChatbubbleEllipsesOutline } from 'react-icons/io5'
-import { RiChatNewLine } from 'react-icons/ri'
+import { IoChatbubbleEllipsesOutline, IoExitOutline } from 'react-icons/io5'
+import { useNavigate } from 'react-router-dom'
 
 
 
 export const ListaHeaderInfo = () => {
 
-  const nombreUsuario = localStorage.getItem('usuario')
+  const navigate = useNavigate();
+
+  const nombreUsuario = localStorage.getItem('usuario') || 'Usuario';
+
+  const handleSalir = () => {
+    localStorage.clear();
+    navigate('/');
+  };
+
+
   return (
     <div className='headercontenido1'>
       <div className='left1'>
@@ -21,7 +30,9 @@ export const ListaHeaderInfo = () => {
         <FaUserGroup className='comunidad' />
         <PiBroadcast className='estados' />
         <IoChatbubbleEllipsesOutline className='canales' />
-        <RiChatNewLine className='nuevochat' />
+        <button className='exit' onClick={handleSalir} label="Salir">
+          <IoExitOutline />
+        </button>
         <MenuContactos />
       </div>
     </div>

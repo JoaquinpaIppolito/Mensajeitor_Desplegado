@@ -2,9 +2,25 @@ import React, { useState } from 'react'
 import './HomeScreen.css'
 import { useNavigate } from 'react-router-dom'
 import { BsWhatsapp } from 'react-icons/bs';
+import { DATA_MOOK } from '../../../public/DATA_MOOK';
 
 
 const HomeScreen = () => {
+
+  const obtenerContactos = () => {
+    let contactos = localStorage.getItem('MOOK')
+    return JSON.parse(contactos)
+  }
+  
+  const agregarContactos = (contactos) => {
+    localStorage.setItem('MOOK', JSON.stringify(contactos))
+  }
+  
+  
+  if (obtenerContactos() === null) {
+    agregarContactos(DATA_MOOK)
+  }
+
 
   const navigate = useNavigate();
   const [error, setError] = useState('');

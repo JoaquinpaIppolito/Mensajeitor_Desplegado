@@ -17,11 +17,6 @@ const agregarContactos = (contactos) => {
 }
 
 
-if (obtenerContactos() === null) {
-  agregarContactos(DATA_MOOK)
-}
-
-
 
 export const ChatScreen = () => {
 
@@ -34,7 +29,7 @@ export const ChatScreen = () => {
     const contactos = obtenerContactos()
     if (contactos) {
       const contacto = contactos.find(contacto => contacto.id === Number(id));
-      setContactoActivo(contacto || null);
+      setContactoActivo(contacto);
     }
   }, [id]);
 
