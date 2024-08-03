@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 import './HomeScreen.css'
 import { useNavigate } from 'react-router-dom'
+import { BsWhatsapp } from 'react-icons/bs';
 
 
 const HomeScreen = () => {
 
 const navigate = useNavigate();
-const [error, seterror] = useState('');
+const [error, setError] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault()
         const usuario = e.target.nuevousuario.value;
         if (usuario !== ''){
         localStorage.setItem('usuario',usuario)
-        navigate('/chat/0');
-        error = ''
+        navigate('/chat/0')
+        setError('')
         e.target.reset()
       }
       else{
-        seterror('Introduzca un nombre de usuario!')
+        setError('Introduzca un nombre de usuario!')
       }
     }
 
@@ -26,7 +27,7 @@ const [error, seterror] = useState('');
   return (
     <div className='fondo'>
         <div className='logocontenedor'>
-            <h1><i class="bi bi-whatsapp"></i></h1><span>WHATSAPP WEB</span>
+            <h1><BsWhatsapp /></h1><span>WHATSAPP WEB</span>
         </div>
     <div className='homecontenedor'>
         <div className='homeheader'>
@@ -39,7 +40,7 @@ const [error, seterror] = useState('');
             <form onSubmit={handleSubmit} className='forminiciar'>
             <span className='descripcion1'>Escribe tu nombre de usuario:</span>
             <br></br>
-            <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Ej: Usuario1' maxLength="30" />
+            <input className='nuevousuario' name='nuevousuario' type='text' placeholder='Ej: Usuario1' maxLength="10" />
             <span className='error'>{error}</span>
             <button className='iniciar' type='submit'>Iniciar</button>
             <br></br>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Mensaje.css'
+import { BsCheck2, BsCheck2All } from 'react-icons/bs'
 
 
 /* Globo del chat */
@@ -21,15 +22,15 @@ export const Mensaje = ({mje}) => {
   }
 
   if (estado=== 'visto'){
-    palomitaestado="bi bi-check-all"
+    palomitaestado=<BsCheck2All />
     colorpalomita='#3FA2F6' 
   }
   else if (estado==='recibido'){
-    palomitaestado="bi bi-check-all"
+    palomitaestado=<BsCheck2All />
     colorpalomita='#ACC5B7'
   }
   else if(estado==='enviado'){
-    palomitaestado="bi bi-check"
+    palomitaestado=<BsCheck2 />
     colorpalomita='#ACC5B7'
   }
 
@@ -44,7 +45,9 @@ export const Mensaje = ({mje}) => {
   <span className='fecha'>
     {hour}
 </span>
-<span className='estado' style={{color:colorpalomita}}><i class={palomitaestado}></i></span>
+<span className='estado' style={{ color: colorpalomita }}>
+            {palomitaestado}
+</span>
   </div>
 </div>
 </div>
@@ -54,6 +57,4 @@ export const Mensaje = ({mje}) => {
 
 
 }
-
-
 

@@ -1,5 +1,8 @@
 import React from 'react'
 import './MensajeForm.css'
+import { BsEmojiLaughing } from 'react-icons/bs'
+import { IoAddOutline } from 'react-icons/io5'
+import { MdSend } from 'react-icons/md'
 
 export const MensajeForm = ({handleSubmitNuevoMensaje}) => {
 
@@ -16,10 +19,10 @@ export const MensajeForm = ({handleSubmitNuevoMensaje}) => {
 
   return (
     <form onSubmit={handleSubmit} className='formnuevomensaje'>
-    <span className='emoji'><i class="bi bi-emoji-laughing"></i></span>
-    <span className='signomas'><i class="bi bi-plus"></i></span>
+    <BsEmojiLaughing className='emoji' />
+    <IoAddOutline className='signomas'/>
     <input className='nuevomensaje' type='text' name='nuevomje' placeholder='Escribe un mensaje'/>
-    <button className='botonenviar' type='submit'><i class="bi bi-send-fill"></i></button>
+    <button className='botonenviar' type='submit'><MdSend /></button>
     </form>
   
   )

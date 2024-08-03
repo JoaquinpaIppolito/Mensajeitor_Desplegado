@@ -1,7 +1,6 @@
 import React from 'react'
 import { ChatScreen } from './Screens'
-import { Navigate, Route, Routes } from 'react-router-dom'
-import { ChatHeaderInfo, ListaMensajes, Mensaje } from './Components/Chat'
+import { Route, Routes } from 'react-router-dom'
 import HomeScreen from './Screens/HomeScreen/HomeScreen'
 import InfoScreen from './Screens/InfoScreen/InfoScreen'
 

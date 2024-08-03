@@ -1,6 +1,10 @@
 import React from 'react'
 import './ChatHeaderInfo.css'
 import { Link } from 'react-router-dom'
+import { BsCameraVideoFill } from 'react-icons/bs'
+import { FaChevronDown } from 'react-icons/fa6'
+import { BiSearchAlt } from 'react-icons/bi'
+import { MdOutlineMoreVert } from 'react-icons/md'
 
 
 
@@ -24,11 +28,11 @@ const {nombre, id, mensajes,thumbnail,ultima_conexion} = contactodata
       </Link>
       <div className='right'>
         <div className='camaramarco'>
-          <span className='camara'><i class="bi bi-camera-video-fill"></i></span>
-          <span className='flechaabajo'><i class="bi bi-chevron-down"></i></span>
+          <BsCameraVideoFill className='camara' />
+          <FaChevronDown className='flechaabajo' />
         </div>
-        <span className='lupa'><i class="bi bi-search"></i></span>
-        <span className='mas'><i class="bi bi-three-dots-vertical"></i></span>   
+        <BiSearchAlt className='lupa' />
+        <MdOutlineMoreVert className='mas'/>   
         </div>
       </div>
   )

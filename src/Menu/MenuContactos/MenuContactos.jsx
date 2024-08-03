@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import './MenuContactos.css'
+import { FaUserGroup } from 'react-icons/fa6';
+import { PiBroadcast } from 'react-icons/pi';
+import { IoChatbubbleEllipsesOutline } from 'react-icons/io5';
+import { RiChatNewLine } from 'react-icons/ri';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 const MenuContactos = () => {
   const [estaAbierto, setestaAbierto] = useState(false);
@@ -11,14 +16,14 @@ const MenuContactos = () => {
   return (
     <div className="menu-contactos-contenedor">
       <div className={`iconohamburguesa ${estaAbierto ? 'abierto' : ''}`} onClick={toggleMenu}>
-      <i class="bi bi-list"></i>
+      <RxHamburgerMenu />
       </div>
       <div className={`menu ${estaAbierto ? 'open' : ''}`}>
         <ul>
-          <li><i class="bi bi-people"></i></li>
-          <li><i class="bi bi-broadcast"></i></li>
-          <li><i class="bi bi-chat-quote"></i></li>
-          <li><i class="bi bi-file-earmark-plus"></i></li>
+          <li><FaUserGroup/></li>
+          <li><PiBroadcast/></li>
+          <li><IoChatbubbleEllipsesOutline/></li>
+          <li><RiChatNewLine/></li>
         </ul>
       </div>
     </div>
@@ -26,3 +31,5 @@ const MenuContactos = () => {
 };
 
 export default MenuContactos;
+
+

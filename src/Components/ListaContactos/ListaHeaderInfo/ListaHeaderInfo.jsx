@@ -1,6 +1,10 @@
 import React from 'react'
 import './ListaHeaderInfo.css'
 import MenuContactos from '../../../Menu/MenuContactos/MenuContactos'
+import { FaUserGroup } from 'react-icons/fa6'
+import { PiBroadcast } from 'react-icons/pi'
+import { IoChatbubbleEllipsesOutline } from 'react-icons/io5'
+import { RiChatNewLine } from 'react-icons/ri'
 
 
 
@@ -14,10 +18,10 @@ export const ListaHeaderInfo = () => {
         <span className='nombreusuario1'>{nombreUsuario}</span>
       </div>
       <div className='right1'>
-        <span className='comunidad'><i class="bi bi-people"></i></span>
-        <span className='estados'><i class="bi bi-broadcast"></i></span>
-        <span className='canales'><i class="bi bi-chat-quote"></i></span>
-        <span className='nuevochat'><i class="bi bi-file-earmark-plus"></i></span>
+        <FaUserGroup className='comunidad'/>
+        <PiBroadcast className='estados'/>
+        <IoChatbubbleEllipsesOutline className='canales' />
+        <RiChatNewLine className='nuevochat' />
         <MenuContactos/>   
         </div>
       </div>
