@@ -3,12 +3,18 @@ import './MenuContactos.css'
 import { FaUserGroup } from 'react-icons/fa6';
 import { PiBroadcast } from 'react-icons/pi';
 import { IoChatbubbleEllipsesOutline, IoExitOutline } from 'react-icons/io5';
-import { RiChatNewLine } from 'react-icons/ri';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const MenuContactos = () => {
   const [estaAbierto, setestaAbierto] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleSalir = () => {
+    localStorage.clear();
+    navigate('/');
+  };
 
   const toggleMenu = () => {
     setestaAbierto(!estaAbierto);
@@ -24,7 +30,9 @@ const MenuContactos = () => {
           <li><FaUserGroup /></li>
           <li><PiBroadcast /></li>
           <li><IoChatbubbleEllipsesOutline /></li>
-          <Link to={`/`}><li><IoExitOutline /></li></Link>
+          <li>
+            <IoExitOutline onClick={handleSalir} className='exit1' />
+          </li>
         </ul>
       </div>
     </div>

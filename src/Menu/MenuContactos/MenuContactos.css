@@ -36,6 +36,26 @@ a {
 }
 
 
+.exit1 {
+  color: #54656F;
+  border: none;
+  background: none;
+  padding-top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.exit1:hover,
+.exit1:active,
+.exit1:focus {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
 
 @media screen and (max-width: 620px) {
   .iconohamburguesa {
