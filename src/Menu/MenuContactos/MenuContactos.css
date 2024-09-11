@@ -63,3 +63,26 @@ a {
   }
 
 }
+
+@media screen and (max-width: 550px) {
+  .iconohamburguesa {
+    font-size: 12px;
+  }
+
+  .exit1{
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  .menu{
+    width: 25px;
+    padding: 5px;
+  }
+
+ 
+}
+
+

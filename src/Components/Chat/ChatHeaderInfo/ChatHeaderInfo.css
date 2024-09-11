@@ -39,31 +39,20 @@
 
 .contactoestado {
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     align-items: flex-start
 }
 
 
 .right {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 10px;
     align-items: center;
     width: 150px;
     margin-left: auto;
 }
 
-.camaramarco {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 15px;
-    width: 60px;
-    height: 32px;
-    border: 1px solid;
-    border-color: #DEE2E6;
-
-
-}
 
 .camara {
     font-size: 18px;
@@ -71,13 +60,6 @@
     padding-top: 3px;
 }
 
-.flechaabajo {
-    font-size: 7px;
-    color: #A2ACB2;
-    display: flex;
-    align-items: center;
-    padding-top: 3px;
-}
 
 
 .lupa {
@@ -93,7 +75,7 @@
 }
 
 
-/* Large Desktops */
+
 @media screen and (max-width: 1200px) {
     .nombre {
         font-size: 14px;
@@ -101,54 +83,23 @@
 }
 
 
-@media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 680px) {
-    .right {
-        justify-content: flex-end;
-        gap: 10px;
-        width: 50px;
-    }
-
-    .camaramarco {
-        display: none;
-    }
-
-    .camara {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .right {
-        justify-content: flex-end;
-        gap: 0px;
-
-    }
+@media screen and (max-width: 550px) {
+   
+    
+   
 
     .fotoperfilchatheader {
         width: 35px;
         height: 35px;
     }
 
-    .nombre {
+    .contactoestado {
         font-size: 10px;
         padding-right: 0px;
     }
-}
-
-
-
-@media screen and (max-width: 320px) {
-    .right {
-        justify-content: flex-end;
-        gap: 3px;
-
-    }
 
     .headercontenido {
-        width: 260px;
+        width: calc(100vw - 60px);
     }
-
 }

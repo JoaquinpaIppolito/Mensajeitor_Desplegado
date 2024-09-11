@@ -204,7 +204,7 @@ export const DATA_MOOK = [
             },
             {
                 author: 'yo',
-                text: 'Demasiado!, gracias graciassss',
+                text: 'Demasiado!,graciass',
                 estado: 'enviado',
                 day: 'hoy',
                 hour: '13:28',
@@ -279,7 +279,7 @@ export const DATA_MOOK = [
         ]
     },
     {
-        nombre: 'Enzo Fernandez',
+        nombre: 'Enzo',
         id: 7,
         thumbnail: '/images/enzo.png',
         telefono: '+54 9 11 20222029',
@@ -305,7 +305,7 @@ export const DATA_MOOK = [
         mensajes: [
             {
                 author: 'De Paul',
-                text: 'Como andasssss desaparecido?',
+                text: 'Como andasss?',
                 estado: 'visto',
                 day: 'hoy',
                 hour: '13:45',

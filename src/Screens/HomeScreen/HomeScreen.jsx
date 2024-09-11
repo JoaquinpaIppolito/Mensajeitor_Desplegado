@@ -43,7 +43,7 @@ const HomeScreen = () => {
   return (
     <div className='fondo'>
       <div className='logocontenedor'>
-        <h1><BsWhatsapp /></h1><span>MENSAJEITOR WEB</span>
+        <h1 className='Logomjheader'><BsWhatsapp /></h1><span className='titulomjheader'>MENSAJEITOR WEB</span>
       </div>
       <div className='homecontenedor'>
         <div className='homeheader'>
@@ -61,8 +61,8 @@ const HomeScreen = () => {
             <button className='iniciar' type='submit'>Iniciar</button>
             <br></br>
           </form>
-          <span className='version'>Ver 1.0</span>
         </div>
+        <span className='version'>Ver 1.0.1 - Mensajeitor 2024</span>
       </div>
     </div>
   )

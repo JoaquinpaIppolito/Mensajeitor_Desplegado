@@ -81,7 +81,7 @@
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
 
     .contenedorlistadocontactos {
         width: 60px;
@@ -103,7 +103,7 @@
     }
 
     .chatcontenedor {
-        width: 260px;
+        width: calc(100vw - 60px);
         height: 100vh;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -111,18 +111,18 @@
     }
 
     .header {
-        width: 260px;
+        width: calc(100vw - 60px);
 
     }
 
 
     .chat {
-        width: 260px;
-        height: calc(100vh - 120px);
+        width: calc(100vw - 60px);
+
     }
 
     .footer {
-        width: 260px;
+        width: calc(100vw - 60px);
     }
 
 }

@@ -27,10 +27,7 @@ export const ChatHeaderInfo = ({ contactodata }) => {
         </div>
       </Link>
       <div className='right'>
-        <div className='camaramarco'>
           <BsCameraVideoFill className='camara' />
-          <FaChevronDown className='flechaabajo' />
-        </div>
         <BiSearchAlt className='lupa' />
         <Link to={`/info/${id}`}>
           <TiInfoLargeOutline className='infoscreenicon' />

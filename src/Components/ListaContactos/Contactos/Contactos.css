@@ -7,7 +7,7 @@
 .cajacontacto {
     display: flex;
     width: 38vw;
-    height: 90px;
+    height: 60px;
     align-items: center;
     font-size: 10px;
     background-color: white;
@@ -55,7 +55,7 @@
 .nombrecontacto {
     color: black;
     width: 200px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .ultimomensaje {
@@ -69,7 +69,7 @@
 
 .fechacontacto {
     color: #667781;
-    font-size: 11px;
+    font-size: 12px;
     margin-left: auto;
     padding-right: 10px;
     white-space: nowrap;
@@ -82,7 +82,6 @@
 @media screen and (max-width: 1200px) {
     .cajacontacto {
         overflow-x: hidden;
-        height: 60px;
     }
 
 
@@ -93,17 +92,12 @@
         border: 1px solid #ded7d7;
     }
 
-    .nombrecontacto {
-        font-size: 10px;
-    }
 }
 
 
-/* Desktops */
 @media screen and (max-width: 992px) {
     .cajacontacto {
         overflow-x: hidden;
-        height: 60px;
         padding-left: 0px;
     }
 
@@ -116,21 +110,14 @@
         border: 1px solid #ded7d7;
     }
 
-    .nombrecontacto {
-        font-size: 12px;
-    }
-
-    .ultimomensaje {
+    .fechacontacto {
         font-size: 10px;
     }
 
-    .fechacontacto {
-        font-size: 9px;
-    }
 }
 
 
-/* Tablets */
+
 @media screen and (max-width: 768px) {
     .cajacontacto {
         overflow-x: hidden;
@@ -147,48 +134,53 @@
         border: 1px solid #ded7d7;
     }
 
+    .fechacontacto {
+        display: none;
+    }
+
 }
 
 
 
 @media screen and (max-width: 680px) {
     .nombrecontacto {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .ultimomensaje {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .fechacontacto {
         display: none;
     }
+
+
 }
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     .ultimomensaje {
         display: none;
     }
 
     .nombrecontacto {
-        font-size: 8px;
+        font-size: 9px;
         font-weight: 400;
+        width: 60px;
+        text-align: center;
+        padding-right: 25px;
+        
     }
 
     .nombreyultimomensaje {
         padding: 3px;
+   
     }
-}
-
-
-
-
-@media screen and (max-width: 320px) {
 
     .cajacontacto {
-        width: 39vw;
+        width: 60px;
         overflow-x: hidden;
         display: flex;
         height: 60px;
@@ -200,29 +192,21 @@
         width: 60px;
         flex-direction: column;
         align-items: center;
-        gap: 2px;
-        padding-right: 10px;
-
-    }
-
-    .nombreyultimomensaje {
+        justify-content: center;
         padding-left: 0px;
+        padding-right: 7px;
+
     }
 
-    .nombrecontacto {
-        color: black;
-        width: 60px;
-        font-size: 8px;
-        font-weight: 100;
-        text-align: center;
-        padding-right: 25px;
-    }
+    
 
     .fotoperfilcontactos {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         border-radius: 150px;
         border: 1px solid #ded7d7;
 
     }
 }
+
+

@@ -12,6 +12,7 @@ export const MensajeForm = ({ handleSubmitNuevoMensaje }) => {
     if (e.target.nuevomje.value != '') {
       handleSubmitNuevoMensaje(e.target.nuevomje.value)
       e.target.reset()
+      inputRef.current.focus();
     }
   }
 
